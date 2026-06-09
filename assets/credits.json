@@ -1,0 +1,178 @@
+{
+  "hero": {
+    "src": "assets/img/hero.jpg",
+    "title": "DSCF0502: a close up of a drink on a table",
+    "creator": "PattayaPatrol",
+    "creator_url": "https://www.flickr.com/photos/194424926@N05",
+    "license": "by-sa",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/194424926@N05/54549508325",
+    "source": "flickr"
+  },
+  "local-1": {
+    "src": "assets/img/local-1.jpg",
+    "title": "41-Internet Cafe",
+    "creator": "Counselman Collection",
+    "creator_url": "https://www.flickr.com/photos/80029441@N00",
+    "license": "by-sa",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/80029441@N00/7997656803",
+    "source": "flickr"
+  },
+  "local-2": {
+    "src": "assets/img/local-2.jpg",
+    "title": "Martini, anyone?",
+    "creator": "Nelo Hotsuma",
+    "creator_url": "https://www.flickr.com/photos/63122283@N06",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/63122283@N06/21057967441",
+    "source": "flickr"
+  },
+  "local-3": {
+    "src": "assets/img/local-3.jpg",
+    "title": "Decor and blackboard menu - Bimbo Deluxe",
+    "creator": "avlxyz",
+    "creator_url": "https://www.flickr.com/photos/10559879@N00",
+    "license": "by-sa",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/10559879@N00/5086278256",
+    "source": "flickr"
+  },
+  "gal-1": {
+    "src": "assets/img/gal-1.jpg",
+    "title": "DitD 48 - Cocktail",
+    "creator": "Edsel L",
+    "creator_url": "https://www.flickr.com/photos/27119975@N00",
+    "license": "by-sa",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/27119975@N00/18683132118",
+    "source": "flickr"
+  },
+  "gal-2": {
+    "src": "assets/img/gal-2.jpg",
+    "title": "The finest Scotch",
+    "creator": "Mtale",
+    "creator_url": "https://www.flickr.com/photos/40388871@N05",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/40388871@N05/3845957712",
+    "source": "flickr"
+  },
+  "gal-3": {
+    "src": "assets/img/gal-3.jpg",
+    "title": "One Night, I Was There",
+    "creator": "mith17",
+    "creator_url": "https://www.flickr.com/photos/53339478@N06",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/53339478@N06/6214143799",
+    "source": "flickr"
+  },
+  "gal-4": {
+    "src": "assets/img/gal-4.jpg",
+    "title": "The Shaker Men – Poster Featuring Shane Premadasa",
+    "creator": "Judy202",
+    "creator_url": "https://commons.wikimedia.org/w/index.php?title=User:Judy202&action=edit&redlink=1",
+    "license": "by-sa",
+    "license_version": "4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=168115119",
+    "source": "wikimedia"
+  },
+  "gal-5": {
+    "src": "assets/img/gal-5.jpg",
+    "title": "Tonic (with quinine) under the Black Light",
+    "creator": "VGB.Studios",
+    "creator_url": "https://www.flickr.com/photos/73213168@N04",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/73213168@N04/7261032472",
+    "source": "flickr"
+  },
+  "gal-6": {
+    "src": "assets/img/gal-6.jpg",
+    "title": "Crack open the bubbly Project 365(2) Day 289",
+    "creator": "Keith Williamson",
+    "creator_url": "https://www.flickr.com/photos/34673186@N03",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/34673186@N03/5188661305",
+    "source": "flickr"
+  },
+  "gal-7": {
+    "src": "assets/img/gal-7.jpg",
+    "title": "Chillin' at the Blu Monkey in Hollywood",
+    "creator": "Jennifer Gaillard",
+    "creator_url": "https://www.flickr.com/photos/24359697@N04",
+    "license": "by-nc-sa",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/24359697@N04/3754064366",
+    "source": "flickr"
+  },
+  "gal-8": {
+    "src": "assets/img/gal-8.jpg",
+    "title": "ICA Battle Mint - Cocktail",
+    "creator": "Edsel L",
+    "creator_url": "https://www.flickr.com/photos/27119975@N00",
+    "license": "by-sa",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/27119975@N00/6747171085",
+    "source": "flickr"
+  },
+  "events": {
+    "src": "assets/img/events.jpg",
+    "title": "Ice Cold - remake/reupload",
+    "creator": "Theo Crazzolara",
+    "creator_url": "https://www.flickr.com/photos/141324643@N05",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/141324643@N05/33372524628",
+    "source": "flickr"
+  },
+  "gal-9": {
+    "src": "assets/img/gal-9.jpg",
+    "title": "Five Senses in Bali",
+    "creator": "Lachlan Hardy",
+    "creator_url": "https://www.flickr.com/photos/98983159@N00",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/98983159@N00/4299818065",
+    "source": "flickr"
+  },
+  "gal-11": {
+    "src": "assets/img/gal-11.jpg",
+    "title": "Busy Night at the Winery",
+    "creator": "Anne Worner",
+    "creator_url": "https://www.flickr.com/photos/28652129@N06",
+    "license": "by-sa",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/28652129@N06/26061549054",
+    "source": "flickr"
+  },
+  "gal-12": {
+    "src": "assets/img/gal-12.jpg",
+    "title": "221002183825",
+    "creator": "jjes84",
+    "creator_url": "https://www.flickr.com/photos/37779177@N03",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/37779177@N03/52433524511",
+    "source": "flickr"
+  }
+}
