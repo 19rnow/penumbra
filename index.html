@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Penumbra — Bar de copas · Malasaña, Madrid</title>
+  <meta name="description" content="Bar de copas y coctelería de autor en Malasaña, Madrid. Sesiones de DJ jue–dom. Aforo íntimo, 60 personas. Calle del Pez 18. Reservas por WhatsApp." />
+  <meta name="theme-color" content="#0B0B14" />
+  <meta property="og:title" content="Penumbra — Donde la noche baja la voz." />
+  <meta property="og:description" content="Bar de copas · Coctelería de autor · Malasaña, Madrid · Calle del Pez 18" />
+  <meta property="og:image" content="assets/img/hero.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Preload hero -->
+  <link rel="preload" as="image" href="assets/img/hero.jpg" fetchpriority="high" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;1,6..96,400;1,6..96,700&family=Manrope:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" />
+
+  <link rel="stylesheet" href="styles.css?v=20260609" />
+</head>
+<body>
+  <a class="skip-link" href="#reservar">Ir al formulario de reserva</a>
+
+  <!-- Aurora global -->
+  <div class="aurora" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ─── SPLASH ─────────────────────────────────── -->
+  <div class="splash" data-splash aria-live="polite" aria-label="Cargando Penumbra">
+    <div class="splash-inner">
+      <p class="splash-logo" aria-hidden="true">
+        <span class="splash-letter" style="--i:0">P</span><span class="splash-letter" style="--i:1">E</span><span class="splash-letter" style="--i:2">N</span><span class="splash-letter" style="--i:3">U</span><span class="splash-letter" style="--i:4">M</span><span class="splash-letter" style="--i:5">B</span><span class="splash-letter" style="--i:6">R</span><span class="splash-letter" style="--i:7">A</span>
+      </p>
+      <div class="splash-bar" aria-hidden="true"><div class="splash-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- ─── CURSOR ─────────────────────────────────── -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor-ring"></div>
+    <span class="cursor-label"></span>
+  </div>
+
+  <!-- ─── SIDE BRAND STRIP ───────────────────────── -->
+  <aside class="brand-strip" aria-hidden="true">
+    <span class="brand-dot"></span>
+    <span class="brand-text">ABIERTO · MIÉ → DOM · 19:00 → 02:30</span>
+  </aside>
+
+  <!-- ─── NAV ────────────────────────────────────── -->
+  <header class="nav" data-nav>
+    <a href="#inicio" class="nav-logo" aria-label="Penumbra — inicio">Penumbra</a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#local"     class="nav-link" data-cursor-label="leer"><span class="nav-num">01</span> Local</a>
+      <a href="#cocteleria" class="nav-link" data-cursor-label="ver"><span class="nav-num">02</span> Cócteles</a>
+      <a href="#musica"    class="nav-link" data-cursor-label="oír"><span class="nav-num">03</span> Música</a>
+      <a href="#galeria"   class="nav-link" data-cursor-label="mirar"><span class="nav-num">04</span> Galería</a>
+      <a href="#eventos"   class="nav-link" data-cursor-label="privado"><span class="nav-num">05</span> Eventos</a>
+    </nav>
+    <a href="#reservar" class="nav-cta" data-cursor-label="reservar">Reservar <span class="nav-cta-arrow">↗</span></a>
+    <button class="nav-burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile nav drawer -->
+  <div class="nav-mobile" id="nav-mobile" aria-hidden="true">
+    <nav aria-label="Menú móvil">
+      <a href="#local"      class="nm-link">01 · Local</a>
+      <a href="#cocteleria" class="nm-link">02 · Cócteles</a>
+      <a href="#musica"     class="nm-link">03 · Música</a>
+      <a href="#galeria"    class="nm-link">04 · Galería</a>
+      <a href="#eventos"    class="nm-link">05 · Eventos</a>
+      <a href="#reservar"   class="nm-cta">Reservar ↗</a>
+    </nav>
+  </div>
+
+  <!-- ─── HERO ────────────────────────────────────── -->
+  <section class="hero" id="inicio" aria-label="Bienvenida a Penumbra">
+    <div class="hero-bg">
+      <img src="assets/img/hero.jpg" alt="Interior de Penumbra en penumbra" fetchpriority="high" loading="eager" />
+      <div class="hero-veil"></div>
+    </div>
+    <div class="hero-inner">
+      <p class="hero-kicker">Bar de copas · Coctelería de autor <span class="hero-kicker-sep">／</span> Malasaña · Madrid</p>
+      <h1 class="hero-title" aria-label="Penumbra">
+        <span class="hero-title-line1">Penum</span>
+        <span class="hero-title-line2">bra.</span>
+      </h1>
+      <p class="hero-tagline"><em>Donde la noche baja la voz.</em></p>
+      <div class="hero-actions">
+        <a href="#reservar" class="btn btn-primary" data-cursor-label="reservar">
+          Reservar mesa <span class="btn-arrow">↗</span>
+        </a>
+        <a href="#cocteleria" class="btn btn-ghost" data-cursor-label="ver">Ver la carta</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span class="scroll-text">scroll</span>
+    </div>
+  </section>
+
+  <!-- ─── MARQUEE NEÓN ─────────────────────────────── -->
+  <div class="marquee-neon" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">Coctelería de autor</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Sesión de DJ jue → dom</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Calle del Pez 18</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Malasaña</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Aforo íntimo 60 personas</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Donde la noche baja la voz</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Coctelería de autor</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Sesión de DJ jue → dom</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Calle del Pez 18</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Malasaña</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Aforo íntimo 60 personas</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Donde la noche baja la voz</span>
+      <span class="marquee-sep">·</span>
+    </div>
+  </div>
+
+  <!-- ─── 01 · EL LOCAL ────────────────────────────── -->
+  <section class="local" id="local" data-section="01">
+    <div class="local-inner container">
+      <div class="local-watermark" aria-hidden="true">01</div>
+
+      <div class="local-photos" aria-label="Fotos del local">
+        <div class="local-photo local-photo--a">
+          <img src="assets/img/local-1.jpg" alt="Interior de Penumbra de noche" loading="lazy" decoding="async" />
+          <div class="local-photo-tape">EST. 2024</div>
+        </div>
+        <div class="local-photo local-photo--b">
+          <img src="assets/img/local-2.jpg" alt="Cóctel con iluminación neón" loading="lazy" decoding="async" />
+        </div>
+        <div class="local-photo local-photo--c">
+          <img src="assets/img/local-3.jpg" alt="Zona lounge del bar" loading="lazy" decoding="async" />
+        </div>
+      </div>
+
+      <div class="local-content">
+        <aside class="local-aside" aria-label="Datos del establecimiento">
+          <span class="local-aside-label">EST · 2024 · MAD</span>
+        </aside>
+
+        <h2 class="local-title reveal" data-split="lines">
+          Un bar para que<br /><em>la noche dure</em><br />de verdad.
+        </h2>
+
+        <blockquote class="local-quote">
+          "Un sitio para empezar la noche con criterio. Buena copa, buena música, luz baja."
+        </blockquote>
+
+        <div class="local-body">
+          <p class="local-lead reveal">Penumbra nació en Malasaña en 2024 con una idea sencilla: un bar que no necesita hablar alto para hacerse entender. Espacio íntimo, carta de autor, selección musical con criterio.</p>
+          <p class="local-text reveal">No es una coctelería de moda. No es una discoteca. Es el lugar al que vas cuando sabes lo que quieres y no tienes prisa.</p>
+          <dl class="local-defs">
+            <div class="local-def">
+              <dt>Aforo</dt>
+              <dd>60 personas</dd>
+            </div>
+            <div class="local-def">
+              <dt>Apertura</dt>
+              <dd>Miércoles a domingo</dd>
+            </div>
+            <div class="local-def">
+              <dt>Horario</dt>
+              <dd>19:00 → 02:30</dd>
+            </div>
+            <div class="local-def">
+              <dt>Reserva</dt>
+              <dd>Recomendada jue–sáb</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 02 · CÓCTELES ────────────────────────────── -->
+  <section class="cocktails" id="cocteleria" data-section="02">
+    <div class="cocktails-sticky" data-cocktail-sticky>
+
+      <header class="cocktails-header">
+        <div class="cocktails-meta">
+          <span class="section-tag">02 · Coctelería</span>
+          <span class="cocktails-progress" data-cocktail-progress aria-live="polite">01 / 10</span>
+        </div>
+        <p class="cocktails-hint" aria-hidden="true">← desliza →</p>
+      </header>
+
+      <div class="cocktails-track" data-cocktail-track>
+
+        <!-- CARD 1 · PENUMBRA -->
+        <article class="cocktail-card" data-cocktail-index="0" aria-label="Penumbra — La copa de la casa">
+          <div class="cocktail-text">
+            <span class="cocktail-series" style="--series-color:#FF3D8B">Casa</span>
+            <h3 class="cocktail-name">Penumbra</h3>
+            <p class="cocktail-subtitle">La copa de la casa</p>
+            <ul class="cocktail-ingredients">
+              <li>Mezcal ahumado</li><li>Vermut oscuro</li><li>Toque de café</li>
+            </ul>
+            <p class="cocktail-desc">Ahumado, amargo y largo. Un sorbo lento para empezar la noche en su tono justo. Copa coupe sobre hielo de mano.</p>
+          </div>
+          <div class="cocktail-visual">
+            <div class="cocktail-glow" style="--gc:#FF3D8B" aria-hidden="true"></div>
+            <svg class="cocktail-svg" viewBox="0 0 120 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <polygon class="glass-liquid" style="fill:#7a2a1c;opacity:0.5" points="24,60 96,60 88,74 64,90 56,90 32,74"/>
+              <path class="glass-outline" style="stroke:#FF3D8B"
+                d="M 12,42 L 32,74 L 56,90 L 64,90 L 88,74 L 108,42 M 60,90 L 60,140 M 40,147 L 80,147"/>
+            </svg>
+          </div>
+        </article>
+
+        <!-- CARD 2 · NEÓN -->
+        <article class="cocktail-card" data-cocktail-index="1" aria-label="Neón — Gin tonic de autor">
+          <div class="cocktail-text">
+            <span class="cocktail-series" style="--series-color:#3DE2FF">Casa</span>
+            <h3 class="cocktail-name">Neón</h3>
+            <p class="cocktail-subtitle">Gin tonic de autor</p>
+            <ul class="cocktail-ingredients">
+              <li>Ginebra cítrica</li><li>Tónica seca</li><li>Piel de pomelo</li>
+            </ul>
+            <p class="cocktail-desc">Burbuja viva, cítrico afilado y un brillo que recuerda al letrero de la entrada. Highball alto, hielo limpio.</p>
+          </div>
+          <div class="cocktail-visual">
+            <div class="cocktail-glow" style="--gc:#3DE2FF" aria-hidden="true"></div>
+            <svg class="cocktail-svg" viewBox="0 0 120 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <polygon class="glass-liquid" style="fill:#3DE2FF;opacity:0.3" points="34,82 86,82 87,155 33,155"/>
+              <path class="glass-outline" style="stroke:#3DE2FF"
+                d="M 35,20 L 33,155 L 87,155 L 85,20"/>
+            </svg>
+          </div>
+        </article>
+
+        <!-- CARD 3 · MEDIANOCHE -->
+        <article class="cocktail-card" data-cocktail-index="2" aria-label="Medianoche — Espresso martini">
+          <div class="cocktail-text">
+            <span class="cocktail-series" style="--series-color:#C9A35B">Casa</span>
+            <h3 class="cocktail-name">Medianoche</h3>
+            <p class="cocktail-subtitle">Espresso martini</p>
+            <ul class="cocktail-ingredients">
+              <li>Espresso reciente</li><li>Vodka</li><li>Licor de café</li>
+            </ul>
+            <p class="cocktail-desc">Café recién hecho y vodka helado, batido hasta dejar la espuma del color del cobre. Para la hora en que la pista calienta.</p>
+          </div>
+          <div class="cocktail-visual">
+            <div class="cocktail-glow" style="--gc:#C9A35B" aria-hidden="true"></div>
+            <svg class="cocktail-svg" viewBox="0 0 120 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <polygon class="glass-liquid" style="fill:#1c0e08;opacity:0.8" points="25,57 95,57 60,95"/>
+              <path class="glass-outline" style="stroke:#C9A35B"
+                d="M 10,38 L 60,95 L 110,38 M 60,95 L 60,142 M 42,148 L 78,148"/>
+            </svg>
+          </div>
+        </article>
+
+        <!-- CARD 4 · BRASA -->
+        <article class="cocktail-card" data-cocktail-index="3" aria-label="Brasa — Negroni con tequila">
+          <div class="cocktail-text">
+            <span class="cocktail-series" style="--series-color:#FF3D8B">Casa</span>
+            <h3 class="cocktail-name">Brasa</h3>
+            <p class="cocktail-subtitle">Negroni con tequila</p>
+            <ul class="cocktail-ingredients">
+              <li>Tequila reposado</li><li>Campari</li><li>Vermut rojo</li>
+            </ul>
+            <p class="cocktail-desc">Negroni reescrito con el ahumado del tequila reposado. Old fashioned, hielo macizo, piel de naranja quemada al pase.</p>
+          </div>
+          <div class="cocktail-visual">
+            <div class="cocktail-glow" style="--gc:#FF3D8B" aria-hidden="true"></div>
+            <svg class="cocktail-svg" viewBox="0 0 120 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <polygon class="glass-liquid" style="fill:#b73422;opacity:0.55" points="21,108 99,108 100,155 20,155"/>
+              <path class="glass-outline" style="stroke:#FF3D8B"
+                d="M 24,52 L 20,155 L 100,155 L 96,52"/>
+            </svg>
+          </div>
+        </article>
+
+        <!-- CARD 5 · VERMUT NEGRO -->
+        <article class="cocktail-card" data-cocktail-index="4" aria-label="Vermut Negro — Vermut largo de la casa">
+          <div class="cocktail-text">
+            <span class="cocktail-series" style="--series-color:#C9A35B">Temporada</span>
+            <h3 class="cocktail-name">Vermut Negro</h3>
+            <p class="cocktail-subtitle">Vermut largo de la casa</p>
+            <ul class="cocktail-ingredients">
+              <li>Vermut casa</li><li>Naranja confitada</li><li>Hielo macizo</li>
+            </ul>
+            <p class="cocktail-desc">Vermut servido sobre hielo de mano, con una naranja confitada en la propia barra. Pensado para los que entran y aún no piden.</p>
+          </div>
+          <div class="cocktail-visual">
+            <div class="cocktail-glow" style="--gc:#C9A35B" aria-hidden="true"></div>
+            <svg class="cocktail-svg" viewBox="0 0 120 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <polygon class="glass-liquid" style="fill:#3a1a0e;opacity:0.7" points="19,114 101,114 102,158 18,158"/>
+              <path class="glass-outline" style="stroke:#C9A35B"
+                d="M 22,48 L 18,158 L 102,158 L 98,48"/>
+            </svg>
+          </div>
+        </article>
+
+        <!-- CARD 6 · SERENO -->
+        <article class="cocktail-card" data-cocktail-index="5" aria-label="Sereno — Spritz oscuro">
+          <div class="cocktail-text">
+            <span class="cocktail-series" style="--series-color:#FF3D8B">Temporada</span>
+            <h3 class="cocktail-name">Sereno</h3>
+            <p class="cocktail-subtitle">Spritz oscuro</p>
+            <ul class="cocktail-ingredients">
+              <li>Aperol</li><li>Cava seco</li><li>Soda</li>
+            </ul>
+            <p class="cocktail-desc">Spritz reescrito en clave nocturna. Aperol, cava seco y soda fría. Para empezar sin pesar.</p>
+          </div>
+          <div class="cocktail-visual">
+            <div class="cocktail-glow" style="--gc:#FF3D8B" aria-hidden="true"></div>
+            <svg class="cocktail-svg" viewBox="0 0 120 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <polygon class="glass-liquid" style="fill:#cc4a26;opacity:0.5" points="24,62 96,62 92,90 75,108 62,115 58,115 45,108 28,90"/>
+              <path class="glass-outline" style="stroke:#FF3D8B"
+                d="M 28,36 L 22,65 L 28,90 L 45,108 L 58,115 L 62,115 L 75,108 L 92,90 L 98,65 L 92,36 M 60,115 L 60,148 M 38,154 L 82,154"/>
+            </svg>
+          </div>
+        </article>
+
+        <!-- CARD 7 · AURORA -->
+        <article class="cocktail-card" data-cocktail-index="6" aria-label="Aurora — French 75 con vermut">
+          <div class="cocktail-text">
+            <span class="cocktail-series" style="--series-color:#C9A35B">Temporada</span>
+            <h3 class="cocktail-name">Aurora</h3>
+            <p class="cocktail-subtitle">French 75 con vermut</p>
+            <ul class="cocktail-ingredients">
+              <li>Cava brut</li><li>Ginebra</li><li>Limón</li>
+            </ul>
+            <p class="cocktail-desc">Cava, ginebra y un toque de vermut blanco. Sube rápido, baja despacio.</p>
+          </div>
+          <div class="cocktail-visual">
+            <div class="cocktail-glow" style="--gc:#C9A35B" aria-hidden="true"></div>
+            <svg class="cocktail-svg" viewBox="0 0 120 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <polygon class="glass-liquid" style="fill:#e8c780;opacity:0.4" points="44,75 76,75 78,150 42,150"/>
+              <path class="glass-outline" style="stroke:#C9A35B"
+                d="M 44,18 L 42,150 L 78,150 L 76,18"/>
+            </svg>
+          </div>
+        </article>
+
+        <!-- CARD 8 · ÚLTIMA HORA -->
+        <article class="cocktail-card" data-cocktail-index="7" aria-label="Última Hora — Café final de noche">
+          <div class="cocktail-text">
+            <span class="cocktail-series" style="--series-color:#C9A35B">Temporada</span>
+            <h3 class="cocktail-name">Última Hora</h3>
+            <p class="cocktail-subtitle">Café final de noche</p>
+            <ul class="cocktail-ingredients">
+              <li>Espresso</li><li>Ron añejo</li><li>Crema</li>
+            </ul>
+            <p class="cocktail-desc">Para los que se quedan al cierre. Espresso, ron añejo y una nube de crema. Servido en taza pequeña.</p>
+          </div>
+          <div class="cocktail-visual">
+            <div class="cocktail-glow" style="--gc:#C9A35B" aria-hidden="true"></div>
+            <svg class="cocktail-svg" viewBox="0 0 120 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <polygon class="glass-liquid" style="fill:#1a0d05;opacity:0.9" points="26,70 94,70 95,152 25,152"/>
+              <path class="glass-outline" style="stroke:#C9A35B"
+                d="M 28,45 L 25,152 L 95,152 L 92,45 M 92,78 L 106,78 L 106,118 L 92,118"/>
+            </svg>
+          </div>
+        </article>
+
+        <!-- CARD 9 · VENENO -->
+        <article class="cocktail-card" data-cocktail-index="8" aria-label="Veneno — Pisco sour de la casa">
+          <div class="cocktail-text">
+            <span class="cocktail-series" style="--series-color:#3DE2FF">Temporada</span>
+            <h3 class="cocktail-name">Veneno</h3>
+            <p class="cocktail-subtitle">Pisco sour de la casa</p>
+            <ul class="cocktail-ingredients">
+              <li>Pisco</li><li>Limón</li><li>Cardamomo</li>
+            </ul>
+            <p class="cocktail-desc">Pisco peruano, limón y un golpe de cardamomo verde. Suave en boca, largo en cabeza.</p>
+          </div>
+          <div class="cocktail-visual">
+            <div class="cocktail-glow" style="--gc:#3DE2FF" aria-hidden="true"></div>
+            <svg class="cocktail-svg" viewBox="0 0 120 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <polygon class="glass-liquid" style="fill:#d8c272;opacity:0.45" points="20,90 100,90 98,112 78,132 64,140 56,140 42,132 22,112"/>
+              <path class="glass-outline" style="stroke:#3DE2FF"
+                d="M 30,45 L 18,80 L 22,112 L 42,132 L 56,140 L 64,140 L 78,132 L 98,112 L 102,80 L 90,45 M 60,140 L 60,157 M 44,163 L 76,163"/>
+            </svg>
+          </div>
+        </article>
+
+        <!-- CARD 10 · VÉRTIGO -->
+        <article class="cocktail-card" data-cocktail-index="9" aria-label="Vértigo — Mai tai oscuro">
+          <div class="cocktail-text">
+            <span class="cocktail-series" style="--series-color:#FF3D8B">Temporada</span>
+            <h3 class="cocktail-name">Vértigo</h3>
+            <p class="cocktail-subtitle">Mai tai oscuro</p>
+            <ul class="cocktail-ingredients">
+              <li>Ron añejo</li><li>Curaçao seco</li><li>Lima</li>
+            </ul>
+            <p class="cocktail-desc">Mai tai reescrito con ron añejo y curaçao seco. La copa que se pide cuando ya hay confianza.</p>
+          </div>
+          <div class="cocktail-visual">
+            <div class="cocktail-glow" style="--gc:#FF3D8B" aria-hidden="true"></div>
+            <svg class="cocktail-svg" viewBox="0 0 120 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <polygon class="glass-liquid" style="fill:#a8341a;opacity:0.55" points="21,72 99,72 100,68 92,22 28,22 20,68"/>
+              <path class="glass-outline" style="stroke:#FF3D8B"
+                d="M 28,22 L 20,68 L 30,108 L 22,148 L 98,148 L 90,108 L 100,68 L 92,22"/>
+            </svg>
+          </div>
+        </article>
+
+      </div><!-- /cocktails-track -->
+
+      <!-- Marquee ingredientes (reverso) -->
+      <div class="cocktails-ingr-marquee" aria-hidden="true">
+        <div class="cocktails-ingr-track">
+          <span>Mezcal ahumado</span><span class="sep">·</span>
+          <span>Vermut oscuro</span><span class="sep">·</span>
+          <span>Ginebra cítrica</span><span class="sep">·</span>
+          <span>Tónica seca</span><span class="sep">·</span>
+          <span>Espresso reciente</span><span class="sep">·</span>
+          <span>Vodka</span><span class="sep">·</span>
+          <span>Tequila reposado</span><span class="sep">·</span>
+          <span>Campari</span><span class="sep">·</span>
+          <span>Vermut rojo</span><span class="sep">·</span>
+          <span>Cava seco</span><span class="sep">·</span>
+          <span>Pisco peruano</span><span class="sep">·</span>
+          <span>Ron añejo</span><span class="sep">·</span>
+          <span>Curaçao seco</span><span class="sep">·</span>
+          <span>Cardamomo</span><span class="sep">·</span>
+          <span>Piel de pomelo</span><span class="sep">·</span>
+          <span>Naranja confitada</span><span class="sep">·</span>
+          <span>Mezcal ahumado</span><span class="sep">·</span>
+          <span>Vermut oscuro</span><span class="sep">·</span>
+          <span>Ginebra cítrica</span><span class="sep">·</span>
+          <span>Tónica seca</span><span class="sep">·</span>
+        </div>
+      </div>
+
+    </div><!-- /cocktails-sticky -->
+  </section>
+
+  <!-- ─── 03 · MÚSICA ──────────────────────────────── -->
+  <section class="music" id="musica" data-section="03">
+    <div class="music-inner container">
+      <div class="music-watermark" aria-hidden="true">03</div>
+      <div class="music-header">
+        <span class="section-tag">03 · Programación</span>
+        <h2 class="music-title reveal">La música<br /><em>con criterio.</em></h2>
+      </div>
+
+      <ul class="music-sessions" aria-label="Sesiones semanales">
+
+        <li class="music-session" style="--day-accent:#C9A35B">
+          <div class="ms-icon" aria-hidden="true">
+            <!-- vinyl -->
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="24" cy="24" r="12" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="24" cy="24" r="4"  stroke="currentColor" stroke-width="1.5"/>
+              <line x1="24" y1="4"  x2="24" y2="8"  stroke="currentColor" stroke-width="1.5"/>
+              <line x1="24" y1="40" x2="24" y2="44" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="4"  y1="24" x2="8"  y2="24" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="40" y1="24" x2="44" y2="24" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="ms-body">
+            <div class="ms-day">Jueves</div>
+            <div class="ms-genre">Soul &amp; Funk</div>
+            <p class="ms-tagline">Vinilo entero, sin prisa.</p>
+          </div>
+          <div class="ms-line" aria-hidden="true"></div>
+        </li>
+
+        <li class="music-session" style="--day-accent:#FF3D8B">
+          <div class="ms-icon" aria-hidden="true">
+            <!-- house / home shape with musical note -->
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polyline points="6,22 24,6 42,22" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <polyline points="10,20 10,42 22,42 22,30 26,30 26,42 38,42 38,20" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <line x1="24" y1="8" x2="24" y2="2" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="ms-body">
+            <div class="ms-day">Viernes</div>
+            <div class="ms-genre">House</div>
+            <p class="ms-tagline">Selección de la casa.</p>
+          </div>
+          <div class="ms-line" aria-hidden="true"></div>
+        </li>
+
+        <li class="music-session" style="--day-accent:#3DE2FF">
+          <div class="ms-icon" aria-hidden="true">
+            <!-- disco ball / faceted sphere -->
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="26" r="18" stroke="currentColor" stroke-width="1.5"/>
+              <ellipse cx="24" cy="26" rx="8" ry="18" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="6"  y1="26" x2="42" y2="26" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="8"  y1="18" x2="40" y2="18" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="8"  y1="34" x2="40" y2="34" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="24" y1="8"  x2="24" y2="4"  stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="ms-body">
+            <div class="ms-day">Sábado</div>
+            <div class="ms-genre">Disco &amp; Nu-Disco</div>
+            <p class="ms-tagline">Pista llena, pies sueltos.</p>
+          </div>
+          <div class="ms-line" aria-hidden="true"></div>
+        </li>
+
+        <li class="music-session" style="--day-accent:#C9A35B">
+          <div class="ms-icon" aria-hidden="true">
+            <!-- sound wave -->
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="24" y1="6"  x2="24" y2="42" stroke="currentColor" stroke-width="2"/>
+              <line x1="16" y1="12" x2="16" y2="36" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="32" y1="12" x2="32" y2="36" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="8"  y1="18" x2="8"  y2="30" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="40" y1="18" x2="40" y2="30" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="ms-body">
+            <div class="ms-day">Domingo</div>
+            <div class="ms-genre">Jazz &amp; Electrónica suave</div>
+            <p class="ms-tagline">Sesión lenta para cerrar la semana.</p>
+          </div>
+          <div class="ms-line" aria-hidden="true"></div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <!-- ─── 04 · GALERÍA ─────────────────────────────── -->
+  <section class="gallery" id="galeria" data-section="04" aria-label="Galería de imágenes">
+    <div class="gallery-header container">
+      <span class="section-tag">04 · Galería</span>
+      <p class="gallery-note">Imágenes de archivo · El cliente las sustituirá por fotos reales del local.</p>
+    </div>
+
+    <div class="gallery-lanes" aria-hidden="true">
+
+      <!-- Lane 1: fast -->
+      <div class="gallery-lane" data-lane-speed="fast">
+        <div class="gallery-lane-track">
+          <img src="assets/img/gal-1.jpg"   alt="Cóctel con humo"         loading="lazy" decoding="async" />
+          <img src="assets/img/gal-3.jpg"   alt="Señal neón nocturna"     loading="lazy" decoding="async" />
+          <img src="assets/img/gal-5.jpg"   alt="Hielo en macro"          loading="lazy" decoding="async" />
+          <img src="assets/img/gal-7.jpg"   alt="Interior del local"      loading="lazy" decoding="async" />
+          <img src="assets/img/gal-9.jpg"   alt="Café y cóctel"           loading="lazy" decoding="async" />
+          <img src="assets/img/gal-11.jpg"  alt="Barra de bar nocturna"   loading="lazy" decoding="async" />
+          <!-- duplicadas para loop -->
+          <img src="assets/img/gal-1.jpg"   alt="" loading="lazy" decoding="async" />
+          <img src="assets/img/gal-3.jpg"   alt="" loading="lazy" decoding="async" />
+          <img src="assets/img/gal-5.jpg"   alt="" loading="lazy" decoding="async" />
+          <img src="assets/img/gal-7.jpg"   alt="" loading="lazy" decoding="async" />
+          <img src="assets/img/gal-9.jpg"   alt="" loading="lazy" decoding="async" />
+          <img src="assets/img/gal-11.jpg"  alt="" loading="lazy" decoding="async" />
+        </div>
+      </div>
+
+      <!-- Lane 2: slow -->
+      <div class="gallery-lane" data-lane-speed="slow">
+        <div class="gallery-lane-track">
+          <img src="assets/img/gal-2.jpg"   alt="Whisky en macro"         loading="lazy" decoding="async" />
+          <img src="assets/img/gal-4.jpg"   alt="Bartender con coctelera" loading="lazy" decoding="async" />
+          <img src="assets/img/gal-6.jpg"   alt="Burbujas de cava"        loading="lazy" decoding="async" />
+          <img src="assets/img/gal-8.jpg"   alt="Gin tonic con cítricos"  loading="lazy" decoding="async" />
+          <img src="assets/img/gal-12.jpg"  alt="Martini oscuro"          loading="lazy" decoding="async" />
+          <img src="assets/img/local-2.jpg" alt="Cóctel con luz neón"     loading="lazy" decoding="async" />
+          <!-- duplicadas -->
+          <img src="assets/img/gal-2.jpg"   alt="" loading="lazy" decoding="async" />
+          <img src="assets/img/gal-4.jpg"   alt="" loading="lazy" decoding="async" />
+          <img src="assets/img/gal-6.jpg"   alt="" loading="lazy" decoding="async" />
+          <img src="assets/img/gal-8.jpg"   alt="" loading="lazy" decoding="async" />
+          <img src="assets/img/gal-12.jpg"  alt="" loading="lazy" decoding="async" />
+          <img src="assets/img/local-2.jpg" alt="" loading="lazy" decoding="async" />
+        </div>
+      </div>
+
+      <!-- Lane 3: reverse -->
+      <div class="gallery-lane" data-lane-speed="reverse">
+        <div class="gallery-lane-track">
+          <img src="assets/img/local-1.jpg" alt="Interior Penumbra"       loading="lazy" decoding="async" />
+          <img src="assets/img/local-3.jpg" alt="Zona lounge"             loading="lazy" decoding="async" />
+          <img src="assets/img/hero.jpg"    alt="Bar Penumbra"            loading="lazy" decoding="async" />
+          <img src="assets/img/events.jpg"  alt="Evento en Penumbra"      loading="lazy" decoding="async" />
+          <img src="assets/img/gal-4.jpg"   alt="Bartender"               loading="lazy" decoding="async" />
+          <img src="assets/img/gal-6.jpg"   alt="Burbujas"                loading="lazy" decoding="async" />
+          <!-- duplicadas -->
+          <img src="assets/img/local-1.jpg" alt="" loading="lazy" decoding="async" />
+          <img src="assets/img/local-3.jpg" alt="" loading="lazy" decoding="async" />
+          <img src="assets/img/hero.jpg"    alt="" loading="lazy" decoding="async" />
+          <img src="assets/img/events.jpg"  alt="" loading="lazy" decoding="async" />
+          <img src="assets/img/gal-4.jpg"   alt="" loading="lazy" decoding="async" />
+          <img src="assets/img/gal-6.jpg"   alt="" loading="lazy" decoding="async" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── 05 · EVENTOS PRIVADOS ────────────────────── -->
+  <section class="events" id="eventos" data-section="05">
+    <div class="events-inner container">
+      <div class="events-watermark" aria-hidden="true">05</div>
+      <div class="events-card" data-tilt>
+        <div class="events-bg">
+          <img src="assets/img/events.jpg" alt="Evento privado en Penumbra" loading="lazy" decoding="async" />
+          <div class="events-veil"></div>
+        </div>
+        <div class="events-content">
+          <span class="section-tag">05 · Eventos privados</span>
+          <h2 class="events-title">Cierra Penumbra<br /><em>para los tuyos.</em></h2>
+          <p class="events-body">Cumpleaños, lanzamiento de producto, cena de empresa con criterio. Penumbra se privatiza para grupos hasta 60 personas. Carta adaptada, selección musical a medida, servicio exclusivo.</p>
+          <a class="btn btn-primary"
+             href="https://wa.me/34910223344?text=Hola%2C%20me%20interesa%20una%20privatizaci%C3%B3n%20de%20Penumbra.%20%C2%BFPodr%C3%ADamos%20hablar%3F"
+             target="_blank" rel="noopener noreferrer"
+             data-cursor-label="WhatsApp">
+            Hablamos por WhatsApp <span class="btn-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 06 · RESERVAR ────────────────────────────── -->
+  <section class="reserve" id="reservar" data-section="06">
+    <div class="reserve-inner container">
+      <div class="reserve-header">
+        <span class="section-tag">06 · Reserva</span>
+        <h2 class="reserve-title reveal">¿Esta noche?</h2>
+      </div>
+
+      <div class="reserve-layout">
+        <form class="reserve-form" data-reserve-form novalidate>
+          <div class="rf-field">
+            <label class="rf-label"><span class="rf-num">01</span> Nombre</label>
+            <input class="rf-input" type="text" name="name" placeholder="Tu nombre" autocomplete="name" required />
+          </div>
+          <div class="rf-field">
+            <label class="rf-label"><span class="rf-num">02</span> Teléfono</label>
+            <input class="rf-input" type="tel" name="phone" placeholder="+34 6XX XXX XXX" autocomplete="tel" required />
+          </div>
+          <div class="rf-row">
+            <div class="rf-field">
+              <label class="rf-label"><span class="rf-num">03</span> Día</label>
+              <input class="rf-input" type="date" name="date" required />
+            </div>
+            <div class="rf-field">
+              <label class="rf-label"><span class="rf-num" aria-hidden="true">&nbsp;</span> Personas</label>
+              <select class="rf-input" name="guests" required>
+                <option value="">— personas</option>
+                <option>1 persona</option>
+                <option>2 personas</option>
+                <option>3 personas</option>
+                <option>4 personas</option>
+                <option>5 personas</option>
+                <option>6 personas</option>
+                <option>7 – 10 personas</option>
+                <option>+10 personas</option>
+              </select>
+            </div>
+          </div>
+          <div class="rf-field">
+            <label class="rf-label"><span class="rf-num">04</span> Nota <span class="rf-optional">(opcional)</span></label>
+            <textarea class="rf-input rf-textarea" name="note" placeholder="Hora aproximada, petición especial…" rows="3"></textarea>
+          </div>
+          <button class="btn btn-primary rf-submit" type="submit" data-cursor-label="enviar">
+            Enviar reserva por WhatsApp <span class="btn-arrow">↗</span>
+          </button>
+          <p class="rf-alt">…o más rápido: <a href="https://wa.me/34910223344" target="_blank" rel="noopener noreferrer" data-cursor-label="WhatsApp">escríbenos directamente →</a></p>
+        </form>
+
+        <aside class="reserve-info">
+          <div class="ri-block">
+            <span class="ri-label">Teléfono</span>
+            <a href="tel:+34910223344" class="ri-value">910 22 33 44</a>
+          </div>
+          <div class="ri-block">
+            <span class="ri-label">WhatsApp</span>
+            <a href="https://wa.me/34910223344" target="_blank" rel="noopener noreferrer" class="ri-value">+34 910 22 33 44</a>
+          </div>
+          <div class="ri-block">
+            <span class="ri-label">Instagram</span>
+            <a href="https://instagram.com/penumbra.madrid" target="_blank" rel="noopener noreferrer" class="ri-value">@penumbra.madrid</a>
+          </div>
+          <div class="ri-block">
+            <span class="ri-label">Dirección</span>
+            <p class="ri-value">Calle del Pez 18<br />Malasaña, Madrid<br /><small>Metro Noviciado / Tribunal</small></p>
+          </div>
+          <div class="ri-block">
+            <span class="ri-label">Horario</span>
+            <p class="ri-value">Miércoles a domingo<br />19:00 → 02:30</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ───────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-display" aria-hidden="true">
+      <span>Penumbra&nbsp;·&nbsp;Penumbra&nbsp;·&nbsp;Penumbra&nbsp;·&nbsp;Penumbra&nbsp;·&nbsp;Penumbra&nbsp;·</span>
+    </div>
+
+    <div class="footer-body container">
+      <div class="footer-col">
+        <h3 class="footer-col-title">Cómo llegar</h3>
+        <address class="footer-address">
+          Calle del Pez 18<br />
+          Malasaña, 28004 Madrid<br />
+          <small>Metro Noviciado (L2) · Tribunal (L1/L10)</small>
+        </address>
+        <div class="footer-map">
+          <iframe
+            title="Localización de Penumbra en Google Maps"
+            src="https://maps.google.com/maps?q=Calle+del+Pez+18+Malaساña+Madrid&output=embed"
+            width="100%" height="200" style="border:0;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col-title">Contacto</h3>
+        <ul class="footer-links">
+          <li><span class="fl-label">Tel</span> <a href="tel:+34910223344">910 22 33 44</a></li>
+          <li><span class="fl-label">WA</span>  <a href="https://wa.me/34910223344" target="_blank" rel="noopener noreferrer">+34 910 22 33 44</a></li>
+          <li><span class="fl-label">IG</span>  <a href="https://instagram.com/penumbra.madrid" target="_blank" rel="noopener noreferrer">@penumbra.madrid</a></li>
+        </ul>
+        <a class="btn btn-primary footer-cta" href="#reservar" data-cursor-label="reservar">
+          Reservar mesa ↗
+        </a>
+      </div>
+
+      <div class="footer-col footer-col--brand">
+        <p class="footer-brand-name">Penumbra</p>
+        <p class="footer-brand-tag"><em>Donde la noche baja la voz.</em></p>
+        <p class="footer-est">EST. 2024 · MAD</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>&copy; 2026 Penumbra · Calle del Pez 18, Malasaña, Madrid</p>
+      <p><a href="assets/credits.json" target="_blank" rel="noopener noreferrer">Créditos de imágenes</a> · <a href="#inicio" data-cursor-label="arriba">↑ Volver arriba</a></p>
+    </div>
+  </footer>
+
+  <!-- ─── SCRIPTS ──────────────────────────────────── -->
+  <script defer src="lib/gsap.min.js"></script>
+  <script defer src="lib/ScrollTrigger.min.js"></script>
+  <script defer src="lib/manifest.js?v=20260607"></script>
+  <script defer src="main.js?v=20260609"></script>
+</body>
+</html>
